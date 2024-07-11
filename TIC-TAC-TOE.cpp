@@ -1,7 +1,7 @@
  //                                    TASK-3
 //                                  TIC TAC TOE
 
-// I have tried to make code as simple as i can, to understand it very easily.
+ 
 #include <iostream>
 using namespace std;
 
