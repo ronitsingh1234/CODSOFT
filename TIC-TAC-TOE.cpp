@@ -1,4 +1,4 @@
-//                                    TASK-3
+ //                                    TASK-3
 //                                  TIC TAC TOE
 
 // I have tried to make code as simple as i can any one can understand it very easily.
@@ -59,22 +59,23 @@ int checkgamestatus()
 
 void board()
 {
-    cout << "  |       |  " << endl;
-    cout << square[1] << " |   " << square[2] << "   |  " << square[3] << endl;
-    cout << "__|_______|___" << endl;
-    cout << "  |       |  " << endl;
-    cout << square[4] << " |   " << square[5] << "   |  " << square[6] << endl;
-    cout << "__|_______|___" << endl;
-    cout << "  |       |  " << endl;
-    cout << square[7] << " |   " << square[8] << "   |  " << square[9] << endl;
-    cout << "  |       |  " << endl;
+    cout << "\t\t\t ___________________"<<endl;
+    cout << "\t\t\t|     |       |     | " << endl;
+    cout << "\t\t\t|   "<< square[1] << " |   " << square[2] << "   |  " << square[3] <<"  |"<< endl;
+    cout << "\t\t\t|_____|_______|_____|"<< endl;
+    cout << "\t\t\t|     |       |     |" << endl;
+    cout << "\t\t\t|   "<< square[4] << " |   " << square[5] << "   |  " << square[6] <<"  |"<<endl;
+    cout << "\t\t\t|_____|_______|_____|" << endl;
+    cout << "\t\t\t|     |       |     |" << endl;
+    cout << "\t\t\t|   "<<square[7] << " |   " << square[8] << "   |  " << square[9] <<"  |"<<endl;
+    cout << "\t\t\t|_____|_______|_____|" << endl;
 }
 
 void player1()
 {
 
     int choice;
-    cout << "Player 1 turn" << endl;
+    cout << "\nPlayer 1 turn\tEnter you move (1-9)" << endl;
     cin >> choice;
     if (choice == 1 && square[1] == '1')
     {
@@ -121,7 +122,7 @@ void player2()
 {
 
     int choice;
-    cout << "Player 2 turn" << endl;
+    cout << "\nPlayer 2 turn\tEnter you move (1-9)" << endl;
     cin >> choice;
     if (choice == 1 && square[1] == '1')
     {
@@ -183,7 +184,7 @@ int main()
     int status;
     cout << "Welcome to the tic toe game\n";
     board();
-    cout << "Player 1 mark is X and Player 2 mark is 0" << endl;
+    cout << "Player 1 mark is X and Player 2 mark is 0\n" << endl;
     checkgamestatus();
     while (checkgamestatus() == -1)
     {
